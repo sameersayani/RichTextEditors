@@ -1,0 +1,31 @@
+🏗️ Build it:
+bash
+Copy
+Edit
+npm run build
+🚀 4. Publish the package
+A. To a private registry (like GitHub Packages / Verdaccio)
+✅ Good for internal org use
+🧪 Easy to restrict access
+
+B. To npm public registry
+bash
+Copy
+Edit
+npm login
+npm publish --access public
+🔁 5. Consume it in any project
+Once published, your team can install it:
+
+bash
+Copy
+Edit
+npm install @your-org/rich-text-editor
+And use it:
+
+tsx
+Copy
+Edit
+import RichTextEditor from '@your-org/rich-text-editor';
+
+<RichTextEditor value={...} onChange={...} />
